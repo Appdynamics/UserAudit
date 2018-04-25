@@ -13,7 +13,7 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		String controllerUrl = args[0];
-	    String username = args[1];
+		String username = args[1];
 		String password = args[2];
 		String accountName = args[3];
 
