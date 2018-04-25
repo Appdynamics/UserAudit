@@ -23,6 +23,5 @@
 hs_err_pid*
 
 .idea/
-output/
 src/test/
 target/generated-sources/
