@@ -1,6 +1,6 @@
-/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/Group.java
-/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/User.java
+/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/pojo/Role.java
+/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/util/DBWrapper.java
 /Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/Main.java
-/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/Role.java
-/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/ExcelManager.java
-/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/DBHelper.java
+/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/pojo/Group.java
+/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/util/CSVWrapper.java
+/Users/bradley.hjelmar/Developer/AppD Tools/UsersReport/src/main/java/com/appdynamics/pojo/User.java
