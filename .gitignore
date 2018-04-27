@@ -21,3 +21,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+/.gitignore
+.idea/dataSources/bf0e638a-9dd0-49d2-91c4-1a3692e825db/_staging_/
+.idea/inspectionProfiles/
+output/
+src/test/
+target/generated-sources/
