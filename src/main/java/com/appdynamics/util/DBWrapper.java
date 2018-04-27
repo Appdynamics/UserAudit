@@ -17,7 +17,6 @@ public class DBWrapper {
 	private String host;
 	private String username;
 	private String password;
-	private String accountName;
 
 	private Map<Queries, String> queries = new HashMap<>();
 
@@ -31,7 +30,6 @@ public class DBWrapper {
 		this.host = host;
 		this.username = username;
 		this.password = password;
-		this.accountName = accountName;
 
 		queries.put(Queries.GET_USERS,
 				"SELECT * " +
@@ -42,7 +40,7 @@ public class DBWrapper {
 				"WHERE  user.id = user_account_role_mapping.user_id " +
 				"       AND account_role.id = user_account_role_mapping.account_role_id " +
 				"       AND account_role.account_id = account.id " +
-				"       AND account.NAME = '" + this.accountName + "' " +
+				"       AND account.NAME = '" + accountName + "' " +
 				"ORDER  BY user.name, " +
 				"          account_role.name ASC;");
 		queries.put(Queries.GET_ROLES,

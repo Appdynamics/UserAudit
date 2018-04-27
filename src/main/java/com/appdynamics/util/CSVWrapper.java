@@ -10,7 +10,6 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import org.apache.commons.io.FileUtils;
@@ -31,12 +30,11 @@ public class CSVWrapper {
 
 			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
+			String date = sdf.format(timestamp);
 
-			FileUtils.writeStringToFile(new File("output/" + sdf.format(timestamp) + "-users.csv"), usersCSVString, "UTF-8");
-			FileUtils.writeStringToFile(new File("output/" + sdf.format(timestamp) + "-groups.csv"), rolesCSVString, "UTF-8");
-			FileUtils.writeStringToFile(new File("output/" + sdf.format(timestamp) + "-roles.csv"), groupCSVString, "UTF-8");
-		} catch (JsonProcessingException e) {
-			e.printStackTrace();
+			FileUtils.writeStringToFile(new File("output/" + date + "-users.csv"), usersCSVString, "UTF-8");
+			FileUtils.writeStringToFile(new File("output/" + date + "-roles.csv"), rolesCSVString, "UTF-8");
+			FileUtils.writeStringToFile(new File("output/" + date + "-groups.csv"), groupCSVString, "UTF-8");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
